@@ -47,6 +47,8 @@ public class Service2Client {
 
         return resp.getBody();*/
 
+        // Directly forward the given token without creating a new token for the resource server like the code above.
+
         Authentication auth = SecurityContextHolder.getContext()
                 .getAuthentication();
         String incomingToken = null;
